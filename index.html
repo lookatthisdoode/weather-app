@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Weather Api</title>
+    <link
+      rel="stylesheet"
+      href="./dist/output.css"
+    />
+    <script
+      src="./script.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div
+      class="card p-10 flex flex-col w-2/3 lg:w-1/3 aspect-auto m-auto mt-36 bg-neutral-200 shadow-2xl"
+    >
+      <div class="city-input flex">
+        <input
+          class="md:text-2xl text-orange-500 w-4/5 px-2 py-2 bg bg-neutral-100"
+          type="text"
+          name="location"
+          placeholder="Enter your city"
+        />
+        <button
+          class="text-xl text-white px-2 bg-neutral-300 hover:bg-neutral-500"
+        >
+          Search
+        </button>
+      </div>
+      <div class="w-full py-5 display flex flex-col gap-px-2 text-neutral-800">
+        <div class="degrees-conditions text-5xl"></div>
+        <div class="city text-2xl"></div>
+        <div class="sunrise-sunset text-sm text-neutral-800 flex">
+          <div class="sunrise"></div>
+          <div class="svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+              />
+            </svg>
+          </div>
+          <div class="sunset"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
